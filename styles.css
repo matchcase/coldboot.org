@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    overflow: hidden;
+}
+
+#overbody {
+    width: 100vw;
+    height: 100vw;
+    z-index: -1;
+    transition: all 2s ease;
+}
+
+#circle-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.circle {
+    width: 20vh; /* Larger circles */
+    height: 20vh; /* Larger circles */
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(1px);
+    position: absolute;
+    margin: -10vh; /* Increased overlap */
+    transition: all 1s ease;
+}
+
+#textwall {
+    position: absolute;
+    font-size: 16vh;
+    top: 1vh;
+    left: 1vw;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    filter: blur(5px);
+  word-break: break-all;
+    color: black;
+    transition: all 1s ease;
+}
+
+#textwall a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blue-band {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60vh;
+    background-color: #3554B0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 30vh;
+}
+
+.website-title {
+    font-size: 15vh;
+    margin-left: 5vh;
+    filter: blur(0.5px);
+}
+
+.website-subtitle {
+    font-size: 4vh;
+    margin-left: 7vh;
+    margin-top: -1vh;
+    filter: blur(0.4px);
+}
+
+.nav-box {
+    position: relative;
+    width: 30vh; /* Adjusted width */
+    height: 20vh; /* Adjusted height */
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    filter: blur(0.3px);
+box-shadow:  10px 10px 33px #2c4692,
+             -10px -10px 33px #3e62ce;
+}
+
+.nav-box:hover {
+    background-color: #777;
+}
+
+.selected .nav-text {
+    font-weight: bold;
+}
+
+.nav-text {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+
+.selected-label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.qr-code-copyright {
+    transform: rotate(-90deg);
+    margin: 3vh;
+    margin-right: 0vh;
+}
+
+.qr-code {
+    height: 13vh;
+    margin: 0vh;
+}
+
+.rotated-text {
+    text-align: center;
+    font-size: 2.3vh;
+    filter: blur(0.2px);
+}
+
+.white-line {
+    position: absolute;
+    bottom: 10px; /* Add gap */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: white;
+    z-index: -1;
+}
