@@ -90,9 +90,11 @@ function generateTextwall() {
     rits.forEach(rit => {
         rit.addEventListener('mouseover', function() {
             rit.style.fontStyle = 'italic';
+            rit.style.color = colors[Math.floor(Math.random() * colors.length)];
         });
         rit.addEventListener('mouseout', function() {
             rit.style.fontStyle = 'normal';
+            rit.style.color = 'black';
         });
     })
     document.getElementById("textwall").style.pointerEvents = "none";
