@@ -1,5 +1,5 @@
 const colors = ['#CA505F', '#3857B9', '#4b3593', '#eac553', '#D87036', '#888888'];
-const links = ["<a href='https://blog.lispy.tech'><span class='ritalicize'>BLOG</span>(<span class='ritalicize'>BLOG</span>)</a>", "<a href='https://github.com/cel7t'><span class='ritalicize'>GITHUB</span>(<span class='ritalicize'>GITHUB</span>)<a>", "<a href='https://www.linkedin.com/in/sarthak-shah-sos'><span class='ritalicize'>LINKEDIN</span>(<span class='ritalicize'>LINKEDIN</span>)</a>", "<a href='https://bits-sos.github.io'><span class='ritalicize'>BITS-SOS</span>(<span class='ritalicize'>BITS-SOS<span>)</a>"]
+const links = ["<a href='https://blog.coldboot.org'><span class='ritalicize'>BLOG</span>(<span class='ritalicize'>BLOG</span>)</a>", "<a href='https://github.com/cel7t'><span class='ritalicize'>GITHUB</span>(<span class='ritalicize'>GITHUB</span>)<a>", "<a href='https://www.linkedin.com/in/sarthak-shah-sos'><span class='ritalicize'>LINKEDIN</span>(<span class='ritalicize'>LINKEDIN</span>)</a>", "<a href='https://bits-sos.github.io'><span class='ritalicize'>BITS-SOS</span>(<span class='ritalicize'>BITS-SOS<span>)</a>"]
 const container = document.getElementById('circle-container');
 let weights = new Array(colors.length).fill(1 / colors.length);
 const aboutBox = document.getElementById('about-box');
@@ -57,16 +57,16 @@ function randomizeCircleColors() {
     document.getElementById("overbody").style.backgroundColor = getRandomColor();
 }
 
-function periodicRitalicize() {
-    const rits = document.querySelectorAll('.ritalicize');
-    rits.forEach(rit => {
-        if (Math.random() > 0.5) {
-            rit.style.fontStyle = "italic";
-        } else {
-            rit.style.fontStyle = "normal";
-        }
-    });
-}
+// function periodicRitalicize() {
+//     const rits = document.querySelectorAll('.ritalicize');
+//     rits.forEach(rit => {
+//         if (Math.random() > 0.5) {
+//             rit.style.fontStyle = "italic";
+//         } else {
+//             rit.style.fontStyle = "normal";
+//         }
+//     });
+// }
 
 function generateTextwall() {
     const textWall = document.getElementById("textwall");
@@ -74,14 +74,24 @@ function generateTextwall() {
         textwall.innerHTML += links[i % links.length];
         textwall.innerHTML += " • ";
     }
+    // const rits = document.querySelectorAll('.ritalicize');
+    // rits.forEach(rit => {
+    //     if (Math.random() > 0.5) {
+    //         rit.style.fontStyle = "italic";
+    //     } else {
+    //         rit.style.fontStyle = "normal";
+    //     }
+    // });
     const rits = document.querySelectorAll('.ritalicize');
     rits.forEach(rit => {
-        if (Math.random() > 0.5) {
-            rit.style.fontStyle = "italic";
-        } else {
-            rit.style.fontStyle = "normal";
-        }
-    });
+        rit.addEventListener('mouseover', function() {
+            rit.style.fontStyle = 'italic';
+        });
+        rit.addEventListener('mouseout', function() {
+            rit.style.fontStyle = 'normal';
+        });
+    })
+    document.getElementById("textwall").style.pointerEvents = "none";
 }
 
 function selectBox(box) {
@@ -129,5 +139,5 @@ document.getElementById("overbody").style.backgroundColor = getRandomColor();
 createCircles();
 generateTextwall();
 setInterval(randomizeCircleColors, 1000);
-setInterval(periodicRitalicize, 1000);
+// setInterval(periodicRitalicize, 1000);
 window.addEventListener("resize", createCircles);
