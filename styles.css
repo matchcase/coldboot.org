@@ -142,7 +142,7 @@ body {
 .rotated-text {
     text-align: center;
     font-size: 2.3vh;
-    filter: blur(0.4px);
+    filter: blur(0.2px);
 }
 
 .white-line {
