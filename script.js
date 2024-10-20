@@ -40,6 +40,10 @@ function createCircles() {
             circle.style.left = `${col * circleDiameter}px`;
             circle.style.top = `${row * circleDiameter}px`;
             circle.style.filter = `blur(${Math.random()}px)`;
+            circle.addEventListener('mouseover', function(){
+                circle.style.backgroundColor = getRandomColor();
+                circle.style.filter = `blur(${Math.random()}px)`;
+            });
             container.appendChild(circle);
         }
     }
@@ -50,9 +54,9 @@ function randomizeCircleColors() {
     const totalCircles = allCircles.length;
     const numberToChange = Math.floor(totalCircles / 5);
     for (let i = 0; i < numberToChange; i++) {
-        const randomIndex = Math.floor(Math.random() * totalCircles);
-        allCircles[randomIndex].style.backgroundColor = getRandomColor();
-        allCircles[randomIndex].style.filter = `blur(${Math.random()}px)`;
+        const randomindex = Math.floor(Math.random() * totalCircles);
+        allCircles[randomindex].style.backgroundColor = getRandomColor();
+        allCircles[randomindex].style.filter = `blur(${Math.random()}px)`;
     }
     document.getElementById("overbody").style.backgroundColor = getRandomColor();
 }
