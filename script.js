@@ -41,8 +41,10 @@ function createCircles() {
             circle.style.top = `${row * circleDiameter}px`;
             circle.style.filter = `blur(${Math.random()}px)`;
             circle.addEventListener('mouseover', function(){
+                circle.style.transition = "all 0.1s ease";
                 circle.style.backgroundColor = getRandomColor();
                 circle.style.filter = `blur(${Math.random()}px)`;
+                circle.style.transition = "all 1s ease";
             });
             container.appendChild(circle);
         }
