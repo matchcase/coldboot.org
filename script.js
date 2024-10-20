@@ -4,6 +4,7 @@ const container = document.getElementById('circle-container');
 let weights = new Array(colors.length).fill(1 / colors.length);
 const aboutBox = document.getElementById('about-box');
 const homeBox = document.getElementById('home-box');
+let direct = true;
 
 function reduceWeight(weights, index) {
     const reductionFactor = 0.5;
@@ -140,8 +141,20 @@ function goToHome() {
     });
 }
 
-aboutBox.addEventListener("click", goToAbout);
-homeBox.addEventListener("click", goToHome);
+function goToDirect(direction) {
+    if (direction == direct) {
+        direction = !direction;
+    }
+    direct = direction;
+    if (direction) {
+        goToHome();
+    } else {
+        goToAbout();
+    }
+}
+
+aboutBox.addEventListener("click", function() {goToDirect(true); });
+homeBox.addEventListener("click", function() {goToDirect(false); });
 
 document.getElementById("overbody").style.backgroundColor = getRandomColor(); 
 createCircles();
