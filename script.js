@@ -1,5 +1,5 @@
 const colors = ['#CA505F', '#3857B9', '#4b3593', '#eac553', '#D87036', '#888888'];
-const links = ["<a href='https://blog.coldboot.org'><span class='ritalicize'>BLOG</span>(<span class='ritalicize'>BLOG</span>)</a>", "<a href='https://github.com/cel7t'><span class='ritalicize'>GITHUB</span>(<span class='ritalicize'>GITHUB</span>)<a>", "<a href='https://www.linkedin.com/in/sarthak-shah-sos'><span class='ritalicize'>LINKEDIN</span>(<span class='ritalicize'>LINKEDIN</span>)</a>", "<a href='https://coldboot.org/assets/resume.pdf'><span class='ritalicize'>RESUME</span>(<span class='ritalicize'>RESUME<span>)</a>"]
+const links = ["<a href='https://blog.coldboot.org'><span class='ritalicize'>BLOG</span>(<span class='ritalicize'>BLOG</span>)</a>", "<a href='https://github.com/cel7t'><span class='ritalicize'>GITHUB</span>(<span class='ritalicize'>GITHUB</span>)<a>", "<a href='https://www.linkedin.com/in/sarthak-shah-sos'><span class='ritalicize'>LINKEDIN</span>(<span class='ritalicize'>LINKEDIN</span>)</a>", "<a href='https://coldboot.org/assets/resume.pdf'><span class='ritalicize'>RESUME</span>(<span class='ritalicize'>RESUME</span>)</a>"]
 const container = document.getElementById('circle-container');
 let weights = new Array(colors.length).fill(1 / colors.length);
 const aboutBox = document.getElementById('about-box');
