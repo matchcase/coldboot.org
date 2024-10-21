@@ -5,6 +5,7 @@ let weights = new Array(colors.length).fill(1 / colors.length);
 const aboutBox = document.getElementById('about-box');
 const homeBox = document.getElementById('home-box');
 let direct = true;
+let prevRitColor = 'black';
 
 function reduceWeight(weights, index) {
     const reductionFactor = 0.5;
@@ -93,7 +94,12 @@ function generateTextwall() {
     rits.forEach(rit => {
         rit.addEventListener('mouseover', function() {
             rit.style.fontStyle = 'italic';
-            rit.style.color = colors[Math.floor(Math.random() * colors.length)];
+            newColor = colors[Math.floor(Math.random() * colors.length)];
+            while (newColor == prevRitColor) {
+                newColor = colors[Math.floor(Math.random() * colors.length)];
+            }
+            rit.style.color = newColor;
+            prevRitColor = newColor;
         });
         rit.addEventListener('mouseout', function() {
             rit.style.fontStyle = 'normal';
