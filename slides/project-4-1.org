@@ -46,6 +46,8 @@ More accurate behavioral predictions are better!
 Ex. Generated e-mails and letters will sound a lot more personal.
 ** Possible Research Vector
 Take the open-source data and test it against problems the individual is skilled at, and compare the performance to a baseline
+** Curious Omission
+They have not mentioned which LLM they used in the paper - perhaps testing different ones could lead to different results?
 * The Oneirogen Hypothesis
 #+ATTR_HTML: :width 50% :height 50%
 [[./deepdream.png]]
