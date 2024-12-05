@@ -1,0 +1,155 @@
+#+TITLE:Browsers and Privacy
+#+OPTIONS: num:nil
+#+REVEAL_THEME: blood
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+reveal_title_slide_background: ./tux.png
+#+reveal_title_slide_background_repeat: repeat
+#+reveal_title_slide_background_size: 200px
+#+reveal_title_slide_background_opacity: 0.2
+#+reveal_default_slide_background: ./sos.png
+#+reveal_default_slide_background_position: 1% 96%
+#+reveal_default_slide_background_size: 100px
+#+reveal_default_slide_background_opacity: 0.4
+* Browsers and Privacy
+#+ATTR_HTML: :width 45% :height 45%
+[[./Internet-web-browser.svg]]
+* What is a Browser?
+A browser is an application that accesses websites.
+It retrieves files from web servers and display them.
+* A Brief History of Browsers
+** WorldWideWeb (1990)
+Created by Tim Berners-Lee at CERN for the NeXT computer
+#+ATTR_HTML: :width 65% :height 65%
+[[./www.gif]]
+** Mosaic (1993)
+Ancestor of Firefox, created at UIUC by Marc Andreessen
+
+[[./mos-10.webp]]
+** Netscape Navigator (1994)
+Marc founded Netscape and released the Netscape Navigator to the public
+#+ATTR_HTML: :width 70% :height 70%
+[[./NetscapeNavigator.png]]
+** The Browser Wars
+Microsoft licensed early Mosaic code and created the Internet Explorer, which started a bitter rivalry between Netscape and Microsoft
+#+ATTR_HTML: :width 60% :height 60%
+[[./ie.png]]
+*** Notable Developments
++ Netscape invented Javascript
++ Microsoft invented CSS
+*** The Lawsuit
+By 1999, IE had 99% of the browser market share. This led to a high-profile anti-trust lawsuit against Microsoft.
+Later, Netscape open-sourced the code for Netscape Navigator, which then became Firefox.
+** Google Chrome (2008)
+Google launched its Chrome browser in 2008, and since then it has come to dominate the browser market.
+#+ATTR_HTML: :width 70% :height 70%
+[[./chrome.png]]
+** Newer Browsers
+An interesting thing to note is that newer browsers like Opera, Vivaldi, Edge and Brave are also based on Chromium like Chrome. Firefox and Safari are the only two popular browsers not based on Chromium.
+#+ATTR_HTML: :width 60% :height 60%
+[[./chromium.png]]
+* A Quick Introduction to Privacy
+** What is Privacy?
+Privacy is the right to have control over your personal information.
+#+ATTR_HTML: :width 70% :height 70%
+[[./privacy.jpg]]
+** Your Data is Valuable
+The Global Data Market is worth at least $100 Billion in 2023, and is projected to grow to $300 billion by 2030!
+** Why Should You Care?
++ Misuse by Corporations
++ Preventing Theft
++ Freedom of Expression
+* The Current Browser Ecosystem
+** Chromium and Manifest V3
+Manifest V3 will make it not possible to use UBO and other content filters on chromium-based browsers.
+[[https://www.eff.org/deeplinks/2021/12/googles-manifest-v3-still-hurts-privacy-security-innovation]]
+#+ATTR_HTML: :width 70% :height 70%
+[[./mv3.png]]
+** Comparison
+Cool site that compares most browsers on privacy-related metrics:
+[[https://privacytests.org/]]
+** Firefox Forks
+Protip: Use Profiles and Containers!
+*** Librewolf
+https://librewolf.net/
+[[./librewolf.png]]
+*** Arkenfox
+https://github.com/arkenfox/user.js/
+*** Betterfox
+https://github.com/yokoffing/Betterfox
+* Extensions for Privacy
+** uBlock Origin
+Don't forget to enable advanced user options!
+https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+#+ATTR_HTML: :width 70% :height 70%
+[[./ubo.png]]
+** Decentraleyes
+https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+[[./decentraleyes.png]]
+** Fingerprinting
+Fingerprinting: detecting people based on how unique their browser is
+#+ATTR_HTML: :width 70% :height 70%
+[[./fingerprinting.jpg]]
+*** UserAgent Spoofing
+https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/
+** Test it!
+https://coveryourtracks.eff.org/
+[[./coveryourtracks.jpeg]]
+* Going One Level Deeper - Why?
+** OPSEC
+Short for Operation Security. This determines how easy and how likely you are to be discovered.
+*** General tips
+*** The layers above are as secure as the layers below
+#+ATTR_HTML: :width 60% :height 60%
+[[./jenga.jpg]]
+*** The more apps/sites you use, the wider your digital footprint
+[[./footprint.png]]
+** Threat Model
+1. What do you need to protect?
+2. Who do you need to protect it from?
+3. What are your vulnerabilities?
+4. What are the risks?
+5. What are the countermeasures?
+
+In short: Know /what/ to protect and know /how/ to protect it
+* Communications
+** VPN
+Recommended: Mullavad
+#+ATTR_HTML: :width 60% :height 60%
+[[./mullvad.png]]
+** E-mail
+Recommended: Tutanota
+[[./tutanota.webp]]
+** Messaging
+AVOID SMS!
+#+ATTR_HTML: :width 60% :height 60%
+[[./SMS.jpg]]
+*** Simple
+Signal, Briar or Jami
+[[./signal.png]]
+*** Advanced
+Matrix, IRC or XMPP
+[[./matrix.svg]]
+** Password Management
+KeepassXC, gnupass
+[[./keepassxc.png]]
+* Tor
+[[./warning.svg]]
+** Welcome to the Dark Net
+Download the tor browser bundle from your package manager
+#+ATTR_HTML: :width 70% :height 70%
+[[./tor.png]]
+** Where to get links?
+- https://tor.taxi
+- https://dark.fail
+- Search Engines: Phobos or Haystak
+** How does it work?
+[[./how tor works.png]]
+* Bonus: TAILS and Qubes
+These are Operating Systems geared towards privacy
+** TAILS
+https://tails.net/
+[[./tails.png]]
+** Qubes
+https://www.qubes-os.org/intro/
+#+ATTR_HTML: :width 80% :height 80%
+[[./qubes.png]]

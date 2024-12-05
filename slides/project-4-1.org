@@ -1,0 +1,79 @@
+#+TITLE:LLM Paper Discussion
+#+OPTIONS: num:nil
+#+REVEAL_THEME: blood
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+reveal_title_slide_background: ./sparkles.svg
+#+reveal_title_slide_background_repeat: repeat
+#+reveal_title_slide_background_size: 100px
+#+reveal_title_slide_background_opacity: 0.2
+#+reveal_default_slide_background: ./sparkles.svg
+#+reveal_default_slide_background_position: 1% 96%
+#+reveal_default_slide_background_size: 100px
+#+reveal_default_slide_background_opacity: 0.4
+* A bit about this presentation
+We will be covering two papers, [[https://arxiv.org/pdf/2411.10109][Generative Agent Simulations of 1000 People]] and the [[https://www.biorxiv.org/content/10.1101/2024.09.27.615483v1][oneirogen hypothesis]], with a focus on providing a high-level overview.
+* A bit about me
+#+ATTR_HTML: :width 20% :height 20%
+[[./yui-pfp.png]]
+
+links: [[https://blog.coldboot.org][blog]], [[https://coldboot.org][main site]], [[https://github.com/cel7t][github]]
+* Generative Agent Simulations
+#+ATTR_HTML: :width 50% :height 50%
+[[./matrix-meme.jpg]]
+* Methodology
+- 1052 people of different age, gender, race, ideology
+- Test to see how well can agent replicas mimic them
+* Overview
+#+ATTR_HTML: :width 70% :height 70%
+[[./gen-agents.png]]
+* Results
+#+ATTR_HTML: :width 70% :height 70%
+[[./gen-agent-results.png]]
+** Key Findings!
+85% accuracy, Reduces biases and outperforms traditional demographic-based models!
+* Different approaches
+#+ATTR_HTML: :width 70% :height 70%
+[[./approaches.png]]
+* Results, compared
+#+ATTR_HTML: :width 70% :height 70%
+[[./methods-compared.png]]
+* Implications
+#+ATTR_HTML: :width 70% :height 70%
+[[./clones.png]]
+** Economic simulations
+More accurate behavioral predictions are better!
+** More personalized AI generated content
+Ex. Generated e-mails and letters will sound a lot more personal.
+** Possible Research Vector
+Take the open-source data and test it against problems the individual is skilled at, and compare the performance to a baseline
+* The Oneirogen Hypothesis
+#+ATTR_HTML: :width 50% :height 50%
+[[./deepdream.png]]
+* Key Idea
+- Psychedelics are primarily 5-HT2a serotonin receptor agonists
+- Wake-Sleep Algorithm that aims to simulate the effects of psychedelics
+* What are Psychedelics?
+#+ATTR_HTML: :width 50% :height 50%
+[[./LSD.webp]]
+* Wake-Sleep Mechanism
+#+ATTR_HTML: :width 50% :height 50%
+[[./eepy.jpg]]
+** The Oneirogen Hypothesis
+"The perceptual effects of classical psychedelics are a result of
+their pharmacological actions inducing neural activity states that truly are more similar to dream-like
+states"
+** The Method
+#+ATTR_HTML: :width 70% :height 70%
+[[./wake-sleep.png]]
+* Desirable Effects Achieved
+Shift enhances replay-dependent learning mechanisms during sleep
+** Replay-dependent learning
+Replay-dependent learning involves the reactivation of neural patterns associated with past experiences during sleep, facilitating the strengthening of synaptic connections and memory consolidation
+* Other Observations
+The model captures effects seen in humans:
+- Emergence of closed-eye hallucinations
+- Increased stimulus-conditioned variabilitiy
+- Significant increase in synaptic plasticity
+* Implications
+#+ATTR_HTML: :width 70% :height 70%
+[[./psych-eye.jpg]]

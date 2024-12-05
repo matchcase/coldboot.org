@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>LLM Paper Discussion</title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/blood.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./sparkles.svg" data-background-size="100px" data-background-repeat="repeat" data-background-opacity="0.2"><h1>LLM Paper Discussion</h1><h1></h1>
+</section>
+<section>
+<section id="slide-org2e92a09" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org2e92a09">A bit about this presentation</h2>
+<p>
+We will be covering two papers, <a href="https://arxiv.org/pdf/2411.10109">Generative Agent Simulations of 1000 People</a> and the <a href="https://www.biorxiv.org/content/10.1101/2024.09.27.615483v1">oneirogen hypothesis</a>, with a focus on providing a high-level overview.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgeeb07c2" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orgeeb07c2">A bit about me</h2>
+
+<div id="org319b6e9" class="figure">
+<p><img src="./yui-pfp.png" alt="yui-pfp.png" width="20%" height="20%" />
+</p>
+</div>
+
+<p>
+links: <a href="https://blog.coldboot.org">blog</a>, <a href="https://coldboot.org">main site</a>, <a href="https://github.com/cel7t">github</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgc8d857f" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orgc8d857f">Generative Agent Simulations</h2>
+
+<div id="orgb6641ae" class="figure">
+<p><img src="./matrix-meme.jpg" alt="matrix-meme.jpg" width="50%" height="50%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org94224f4" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org94224f4">Methodology</h2>
+<ul>
+<li>1052 people of different age, gender, race, ideology</li>
+<li>Test to see how well can agent replicas mimic them</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org25b3fc8" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org25b3fc8">Overview</h2>
+
+<div id="org91b4151" class="figure">
+<p><img src="./gen-agents.png" alt="gen-agents.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orge528104" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orge528104">Results</h2>
+
+<div id="org42d3cb0" class="figure">
+<p><img src="./gen-agent-results.png" alt="gen-agent-results.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+<section id="slide-org42183fd" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org42183fd">Key Findings!</h3>
+<p>
+85% accuracy, Reduces biases and outperforms traditional demographic-based models!
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge7c682f" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orge7c682f">Different approaches</h2>
+
+<div id="org2296477" class="figure">
+<p><img src="./approaches.png" alt="approaches.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org6c62f74" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org6c62f74">Results, compared</h2>
+
+<div id="orge3d1236" class="figure">
+<p><img src="./methods-compared.png" alt="methods-compared.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3e8a84a" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org3e8a84a">Implications</h2>
+
+<div id="org53e552f" class="figure">
+<p><img src="./clones.png" alt="clones.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+<section id="slide-org3de8498" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org3de8498">Economic simulations</h3>
+<p>
+More accurate behavioral predictions are better!
+</p>
+</section>
+<section id="slide-org02fb5a8" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org02fb5a8">More personalized AI generated content</h3>
+<p>
+Ex. Generated e-mails and letters will sound a lot more personal.
+</p>
+</section>
+<section id="slide-org7e75ecb" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org7e75ecb">Possible Research Vector</h3>
+<p>
+Take the open-source data and test it against problems the individual is skilled at, and compare the performance to a baseline
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org1d87365" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org1d87365">The Oneirogen Hypothesis</h2>
+
+<div id="orgc3450af" class="figure">
+<p><img src="./deepdream.png" alt="deepdream.png" width="50%" height="50%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org5d97534" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org5d97534">Key Idea</h2>
+<ul>
+<li>Psychedelics are primarily 5-HT2a serotonin receptor agonists</li>
+<li>Wake-Sleep Algorithm that aims to simulate the effects of psychedelics</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgd25c244" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orgd25c244">What are Psychedelics?</h2>
+
+<div id="org6028baf" class="figure">
+<p><img src="./LSD.webp" alt="LSD.webp" width="50%" height="50%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org27be1ba" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org27be1ba">Wake-Sleep Mechanism</h2>
+
+<div id="orgbe506b1" class="figure">
+<p><img src="./eepy.jpg" alt="eepy.jpg" width="50%" height="50%" />
+</p>
+</div>
+</section>
+<section id="slide-orgb9400fc" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="orgb9400fc">The Oneirogen Hypothesis</h3>
+<p>
+"The perceptual effects of classical psychedelics are a result of
+their pharmacological actions inducing neural activity states that truly are more similar to dream-like
+states"
+</p>
+</section>
+<section id="slide-org6bffd7f" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org6bffd7f">The Method</h3>
+
+<div id="orgb3fe721" class="figure">
+<p><img src="./wake-sleep.png" alt="wake-sleep.png" width="70%" height="70%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org584745a" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org584745a">Desirable Effects Achieved</h2>
+<p>
+Shift enhances replay-dependent learning mechanisms during sleep
+</p>
+</section>
+<section id="slide-org1dcf5e8" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h3 id="org1dcf5e8">Replay-dependent learning</h3>
+<p>
+Replay-dependent learning involves the reactivation of neural patterns associated with past experiences during sleep, facilitating the strengthening of synaptic connections and memory consolidation
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org568e974" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="org568e974">Other Observations</h2>
+<p>
+The model captures effects seen in humans:
+</p>
+<ul>
+<li>Emergence of closed-eye hallucinations</li>
+<li>Increased stimulus-conditioned variabilitiy</li>
+<li>Significant increase in synaptic plasticity</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgef41df9" data-background="./sparkles.svg" data-background-size="100px" data-background-position="1% 96%" data-background-opacity="0.4">
+<h2 id="orgef41df9">Implications</h2>
+
+<div id="orgf063e74" class="figure">
+<p><img src="./psych-eye.jpg" alt="psych-eye.jpg" width="70%" height="70%" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
