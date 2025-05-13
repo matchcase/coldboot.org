@@ -61,7 +61,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 60vh;
+    bottom: 10vh;
     background-color: #3554B0;
     color: white;
     display: flex;
