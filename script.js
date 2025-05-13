@@ -130,13 +130,13 @@ function goToAbout() {
     });
     document.getElementById("textwall").style.pointerEvents = "auto";
     document.getElementById("textwall").style.opacity = 1;
-    document.getElementById("textwall").style.filter = "blur(2px)";
+    document.getElementById("textwall").style.filter = "blur(0.2vh)";
 }
 
 function goToHome() {
     selectBox(homeBox);
     deselectBox(aboutBox);
-    document.getElementById("textwall").style.filter = "blur(10px)";
+    document.getElementById("textwall").style.filter = "blur(0.8vh)";
     document.getElementById("textwall").style.opacity = 0;
     document.getElementById("textwall").style.pointerEvents = "none";
     document.getElementById("overbody").style.opacity = 1;

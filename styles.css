@@ -32,7 +32,7 @@ body {
     height: 20vh;
     border-radius: 50%;
     opacity: 0.5;
-    filter: blur(1px);
+    filter: blur(0.01vh);
     position: absolute;
     margin: -10vh;
     transition: all 1s ease;
@@ -46,7 +46,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(0.05vh);
     word-break: break-all;
     color: black;
     transition: all 1s ease;
@@ -74,39 +74,50 @@ body {
 .website-title {
     font-size: 15vh;
     margin-left: 5vh;
-    filter: blur(0.5px);
+    margin-right: 2vh;
+    filter: blur(0.05vh);
 }
 
 .website-subtitle {
     font-size: 4vh;
     margin-left: 7vh;
     margin-top: -1vh;
-    filter: blur(0.4px);
+    filter: blur(0.05vh);
 }
 
 #nav-box-container {
     display: flex;
     flex-direction: row;
-    gap: 7vh;
+    gap: 5vh;
 }
 
 .nav-box {
     position: relative;
     width: 25vh;
     height: 20vh;
-    border: 2px solid white;
+    border: 0.2vh solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    filter: blur(0.3px);
-    box-shadow:  10px 10px 33px #2c4692,
-                 -10px -10px 33px #3e62ce;
+    filter: blur(0.05vh);
+    box-shadow:  0.7vh 0.7vh 1.3vh #2c4692,
+                 -0.35vh -0.35vh 0.65vh #3e62ce;
+}
+
+.nav-box.selected {
+    background-color: #314da1;
+    box-shadow:  inset 0.7vh 0.7vh 1.3vh #2c4692,
+                 inset -0.7vh -0.7vh 1.3vh #3554b0;
 }
 
 .nav-box:hover {
     background-color: #777;
+}
+
+.nav-box.selected:hover{
+    box-shadow: none;
 }
 
 .selected .nav-text {
@@ -142,15 +153,15 @@ body {
 .rotated-text {
     text-align: center;
     font-size: 2.3vh;
-    filter: blur(0.2px);
+    filter: blur(0.02vh);
 }
 
 .white-line {
     position: absolute;
-    bottom: 10px;
+    bottom: 1vh;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 0.2vh;
     background-color: white;
     z-index: -1;
 }
